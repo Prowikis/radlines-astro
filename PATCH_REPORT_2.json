@@ -1,0 +1,37 @@
+{
+  "desc_removed": 4,
+  "edit_removed": 12,
+  "area_redirects": 11,
+  "link_redirects": 271,
+  "selflinks": 0,
+  "dead_links_removed": 705,
+  "dead_areas_removed": 1,
+  "commons_rewritten": 666,
+  "thumbs_sized": 207,
+  "fallback_pages_restored": [
+    "Radlines:About",
+    "Radlines:Disclaimer",
+    "Wrist",
+    "X-ray of osteoarthritis of the cervical spine",
+    "Radlines:Username policy",
+    "Urolithiasis",
+    "Radlines:Discussion page",
+    "Radlines:Help",
+    "Radlines:Editorial guidelines",
+    "Radlines:Contribute",
+    "Radlines:Privacy policy",
+    "Radlines:Copyright",
+    "CT in urolithiasis",
+    "X-ray of distal radius fracture",
+    "Fluoroscopy of fibrin sheaths of ports",
+    "X-ray of flat feet in adults"
+  ],
+  "redirects_known": 37,
+  "main_hotspots_clickable": 58,
+  "main_hotspots_total": 59,
+  "main_unclickable": [
+    "Breast"
+  ],
+  "post_audit_nonexistent_internal_links_remaining": 0,
+  "note_breast": "Original imagemap target /Breast has no article in the database backup, so it is intentionally not linked."
+}

@@ -1,0 +1,178 @@
+---
+const hotspots = [
+  {"label":"Abdomen and pelvis","href":"/Abdomen_and_pelvis","x":123,"y":427,"w":209,"h":363},
+  {"label":"Lower leg","href":"/Lower_leg","x":103,"y":1147,"w":175,"h":250},
+  {"label":"Thorax","href":"/Thorax","x":131,"y":270,"w":198,"h":157},
+  {"label":"Head","href":"/Head","x":149,"y":8,"w":180,"h":151},
+  {"label":"Thigh","href":"/Thigh","x":72,"y":846,"w":160,"h":165},
+  {"label":"Knee","href":"/Knee","x":105,"y":1014,"w":173,"h":133},
+  {"label":"Hip","href":"/Hip","x":72,"y":641,"w":106,"h":205},
+  {"label":"Contrast media","href":"/Contrast_media","x":3,"y":1266,"w":95,"h":221},
+  {"label":"Neck","href":"/Neck","x":147,"y":162,"w":185,"h":111},
+  {"label":"Stomach and intestines","href":"/Stomach_and_intestines","x":206,"y":520,"w":116,"h":146},
+  {"label":"Reproductive system","href":"/Reproductive_system","x":185,"y":666,"w":131,"h":116},
+  {"label":"Ankle","href":"/Ankle","x":105,"y":1394,"w":173,"h":80},
+  {"label":"Upper arm","href":"/Upper_arm","x":21,"y":373,"w":105,"h":116},
+  {"label":"Foot","href":"/Foot","x":105,"y":1474,"w":175,"h":64},
+  {"label":"Shoulder","href":"/Shoulder","x":28,"y":270,"w":103,"h":100},
+  {"label":"Elbow","href":"/Elbow","x":18,"y":491,"w":105,"h":88},
+  {"label":"Hand","href":"/Hand","x":3,"y":736,"w":64,"h":139},
+  {"label":"Contrast medium reaction","href":"/Contrast_medium_reaction","x":10,"y":1371,"w":80,"h":111},
+  {"label":"Projectional radiography","href":"/Projectional_radiography","x":0,"y":23,"w":82,"h":103},
+  {"label":"Musculoskeletal","href":"/Musculoskeletal","x":13,"y":1132,"w":69,"h":113},
+  {"label":"Vascular","href":"/Vascular","x":10,"y":1024,"w":72,"h":100},
+  {"label":"Wrist","href":"/Wrist","x":3,"y":635,"w":66,"h":98},
+  {"label":"Forearm","href":"/Forearm","x":3,"y":579,"w":108,"h":56},
+  {"label":"Urinary system","href":"/Urinary_system","x":144,"y":522,"w":64,"h":90},
+  {"label":"Fluoroscopy","href":"/Fluoroscopy","x":0,"y":198,"w":90,"h":62},
+  {"label":"Ultrasonography","href":"/Ultrasonography","x":0,"y":129,"w":80,"h":69},
+  {"label":"Vascular","href":"/Vascular","x":206,"y":368,"w":100,"h":54},
+  {"label":"Urinary system","href":"/Urinary_system","x":193,"y":610,"w":64,"h":82},
+  {"label":"CT","href":"/CT","x":87,"y":23,"w":49,"h":103},
+  {"label":"X-ray of the hip","href":"/X-ray_of_the_hip","x":75,"y":756,"w":59,"h":85},
+  {"label":"X-ray of the knee","href":"/X-ray_of_the_knee","x":214,"y":1016,"w":56,"h":88},
+  {"label":"Thyroid","href":"/Thyroid","x":162,"y":224,"w":103,"h":46},
+  {"label":"X-ray of the foot","href":"/X-ray_of_the_foot","x":193,"y":1479,"w":82,"h":54},
+  {"label":"X-ray of the thorax","href":"/X-ray_of_the_thorax","x":139,"y":293,"w":57,"h":72},
+  {"label":"MRI","href":"/MRI","x":85,"y":126,"w":56,"h":72},
+  {"label":"X-ray of the ankle","href":"/X-ray_of_the_ankle","x":216,"y":1399,"w":54,"h":72},
+  {"label":"X-ray of the shoulder","href":"/X-ray_of_the_shoulder","x":28,"y":296,"w":54,"h":69},
+  {"label":"Vertebral column","href":"/Vertebral_column","x":208,"y":581,"w":70,"h":52},
+  {"label":"Hip joint","href":"/Hip_joint","x":111,"y":692,"w":61,"h":59},
+  {"label":"CT of the thorax","href":"/CT_of_the_thorax","x":206,"y":293,"w":51,"h":70},
+  {"label":"X-ray of the wrist","href":"/X-ray_of_the_wrist","x":5,"y":659,"w":54,"h":66},
+  {"label":"X-ray of the hand","href":"/X-ray_of_the_hand","x":10,"y":759,"w":49,"h":64},
+  {"label":"CT of the head","href":"/CT_of_the_head","x":175,"y":51,"w":44,"h":70},
+  {"label":"X-ray of the cervical spine","href":"/X-ray_of_the_cervical_spine","x":237,"y":180,"w":74,"h":41},
+  {"label":"X-ray of the elbow","href":"/X-ray_of_the_elbow","x":21,"y":515,"w":51,"h":59},
+  {"label":"MRI of the head","href":"/MRI_of_the_head","x":234,"y":54,"w":44,"h":67},
+  {"label":"Biliary tract","href":"/Biliary_tract","x":144,"y":494,"w":95,"h":28},
+  {"label":"Pancreas","href":"/Pancreas","x":237,"y":491,"w":85,"h":31},
+  {"label":"Spleen","href":"/Spleen","x":257,"y":453,"w":67,"h":38},
+  {"label":"CT of the neck","href":"/CT_of_the_neck","x":170,"y":180,"w":62,"h":41},
+  {"label":"Male reproductive system","href":"/Reproductive_system","x":252,"y":731,"w":52,"h":46},
+  {"label":"Aorta","href":"/Aorta","x":208,"y":520,"w":39,"h":61},
+  {"label":"Kidney","href":"/Kidney","x":147,"y":530,"w":54,"h":44},
+  {"label":"Female reproductive system","href":"/Reproductive_system","x":193,"y":733,"w":54,"h":44},
+  {"label":"Pelvic bones","href":"/Pelvic_bones","x":123,"y":641,"w":55,"h":43},
+  {"label":"Adrenal glands","href":"/Adrenal_glands","x":141,"y":453,"w":62,"h":38},
+  {"label":"Liver","href":"/Liver","x":201,"y":450,"w":54,"h":41},
+  {"label":"Heart","href":"/Heart","x":211,"y":394,"w":64,"h":25},
+];
+
+// Original MediaWiki "Abdomen and pelvis locations" imagemap.
+// Broad regions appear first so specific/smaller targets remain clickable above them.
+const abdomenHotspots = [
+  {"label":"Urinary system","href":"/Urinary_system","x":17,"y":208,"w":192,"h":200},
+  {"label":"Stomach and intestines","href":"/Stomach_and_intestines","x":128,"y":207,"w":183,"h":240},
+  {"label":"Spleen","href":"/Spleen","x":200,"y":91,"w":119,"h":69},
+  {"label":"Male reproductive system","href":"/Reproductive_system","x":204,"y":528,"w":112,"h":98},
+  {"label":"Female reproductive system","href":"/Reproductive_system","x":91,"y":527,"w":105,"h":99},
+  {"label":"Urinary system","href":"/Urinary_system","x":102,"y":408,"w":107,"h":78},
+  {"label":"Biliary tract","href":"/Biliary_tract","x":17,"y":160,"w":159,"h":48},
+  {"label":"Pancreas","href":"/Pancreas","x":175,"y":161,"w":136,"h":46},
+  {"label":"Adrenal glands","href":"/Adrenal_glands","x":17,"y":92,"w":92,"h":68},
+  {"label":"Liver","href":"/Liver","x":109,"y":92,"w":89,"h":69},
+  {"label":"Aorta","href":"/Aorta","x":128,"y":208,"w":71,"h":100},
+  {"label":"Vertebral column","href":"/Vertebral_column","x":128,"y":308,"w":69,"h":83},
+  {"label":"Kidney","href":"/Kidney","x":28,"y":255,"w":89,"h":35},
+  {"label":"CT of the urinary system","href":"/CT_of_the_urinary_system","x":26,"y":299,"w":87,"h":49},
+  {"label":"Ultrasonography of the urinary system","href":"/Ultrasonography_of_the_urinary_system","x":26,"y":353,"w":90,"h":52},
+  {"label":"Scrotal ultrasonography","href":"/Ultrasonography_of_the_scrotum","x":232,"y":545,"w":84,"h":80},
+  {"label":"Ultrasonography of the spleen","href":"/Ultrasonography_of_the_spleen","x":240,"y":106,"w":76,"h":52},
+  {"label":"Ultrasonography of the abdomen and pelvis","href":"/Ultrasonography_of_the_abdomen_and_pelvis","x":124,"y":26,"w":82,"h":61},
+  {"label":"X-ray of the abdomen and pelvis","href":"/X-ray_of_the_abdomen_and_pelvis","x":74,"y":28,"w":44,"h":60},
+  {"label":"CT of the abdomen and pelvis","href":"/CT_of_the_abdomen_and_pelvis","x":23,"y":28,"w":43,"h":59},
+];
+---
+<section class="welcome">
+  <h1>Radiology guidelines</h1>
+  <p>Open access guidelines and reference material for radiologists.</p>
+</section>
+
+<div class="main-grid">
+  <section class="panel locations">
+    <h2>Locations and modalities</h2>
+    <div class="anatomy-map-wrap">
+      <svg class="image-map anatomy-map" viewBox="0 0 337 1540" role="img" aria-labelledby="anatomy-map-title anatomy-map-desc" preserveAspectRatio="xMidYMin meet">
+        <title id="anatomy-map-title">Interactive Radlines anatomy menu</title>
+        <desc id="anatomy-map-desc">Select a labeled body region or imaging modality to open its Radlines page.</desc>
+        <image href="/media/Anatomy_image_for_main_menu.png" x="0" y="0" width="337" height="1540" />
+        {hotspots.map((h) => (
+          <a href={h.href} aria-label={h.label}>
+            <title>{h.label}</title>
+            <rect class="hotspot" x={h.x} y={h.y} width={h.w} height={h.h} rx="1" />
+          </a>
+        ))}
+      </svg>
+      <p class="map-help">Click any labeled area of the image.</p>
+    </div>
+  </section>
+
+  <div class="side-column">
+    <section class="panel">
+      <h2>Emergencies</h2>
+      <ul class="main-links">
+        <li><a href="/Trauma">Trauma</a></li>
+        <li><a href="/Stroke">Stroke</a></li>
+        <li><a href="/Contrast_medium_reaction">Contrast medium reaction</a></li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2><a href="/Radlines:About">About Radlines</a></h2>
+      <p>Radlines is an international, collaborative, non-profit, ad-free and open access collection of guidelines in radiology. It is created by doctors, providing quick access to the most relevant information.</p>
+      <p>Further information: <a href="/Radlines:About">About Radlines</a></p>
+      <p class="article-count">283 articles in the original Radlines snapshot.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Case of the month</h2>
+      <figure class="case-figure">
+        <a href="https://commons.wikimedia.org/wiki/File:3D_CT_of_thorax,_annotated.jpg" target="_blank" rel="noopener">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/3D_CT_of_thorax,_annotated.jpg?width=640" width="320" alt="3D CT of thorax, annotated" loading="lazy" referrerpolicy="no-referrer" />
+        </a>
+        <figcaption>Volume rendering of a <a href="/CT">CT scan</a> of the thorax.</figcaption>
+      </figure>
+    </section>
+
+    <section class="panel abdomen-panel">
+      <h2><a href="/Abdomen_and_pelvis">Abdomen and pelvis</a></h2>
+      <div class="abdomen-map-wrap">
+        <svg class="image-map abdomen-map" viewBox="0 0 330 659" role="img" aria-labelledby="abdomen-map-title abdomen-map-desc" preserveAspectRatio="xMidYMin meet">
+          <title id="abdomen-map-title">Interactive abdomen and pelvis menu</title>
+          <desc id="abdomen-map-desc">Select an abdominal or pelvic organ, region, or imaging modality to open its Radlines page.</desc>
+          <image href="/media/Abdomen_and_pelvis_for_menu.png" x="0" y="0" width="330" height="659" />
+          {abdomenHotspots.map((h) => (
+            <a href={h.href} aria-label={h.label}>
+              <title>{h.label}</title>
+              <rect class="hotspot" x={h.x} y={h.y} width={h.w} height={h.h} rx="1" />
+            </a>
+          ))}
+        </svg>
+        <p class="map-help">Click any labeled area of the image.</p>
+      </div>
+      <ul class="main-links after-map">
+        <li><a href="/Abdominal_wall">Abdominal wall</a></li>
+      </ul>
+      <p><a href="/Abdomen_and_pelvis">More abdomen and pelvis</a></p>
+    </section>
+
+    <section class="panel">
+      <h2>Location-unspecific diseases</h2>
+      <ul class="main-links">
+        <li><a href="/Tumors">Tumors</a></li>
+        <li><a href="/Abscess">Abscess</a></li>
+        <li><a href="/Lipoma">Lipoma</a></li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<style>
+.welcome{text-align:center;padding:24px 12px 18px}.welcome h1{border:0;margin:0 0 6px;font-size:1.9rem}.welcome p{margin:0 auto;color:#52606d}
+.main-grid{display:grid;grid-template-columns:minmax(355px,430px) minmax(330px,1fr);gap:22px;align-items:start;margin:18px auto;max-width:980px}.side-column{display:flex;flex-direction:column;gap:18px}
+.panel{border:1px solid #d9e0e8;border-radius:8px;background:#fff;padding:18px}.panel h2{font-size:1.1rem;margin:0 0 14px;padding:8px 10px;border:1px solid #a3b0bf;background:#cedff2;color:#000;border-radius:3px}.panel h2 a{text-decoration:none;color:inherit}.panel p{line-height:1.45}.main-links{margin:.25rem 0 .5rem;padding-left:1.35rem}.main-links li{margin:.25rem 0}.article-count{font-size:.85rem;color:#64748b}.case-figure{margin:0}.case-figure img{display:block;width:min(100%,320px);height:auto}.case-figure figcaption{margin-top:.55rem;line-height:1.4}
+.locations{text-align:center}.anatomy-map-wrap{width:100%;max-width:380px;margin:0 auto}.image-map{display:block;width:100%;height:auto;margin:0 auto}.hotspot{fill:transparent;stroke:transparent;stroke-width:1;pointer-events:all}.hotspot:hover,.hotspot:focus{fill:rgba(37,99,166,.13);stroke:#2563a6}.map-help{margin:.65rem auto 0;color:#64748b;font-size:.84rem;text-align:center}.abdomen-map-wrap{width:100%;max-width:330px;margin:0 auto}.after-map{margin-top:1rem}
+@media(max-width:800px){.main-grid{grid-template-columns:1fr;max-width:430px}.panel{padding:14px}.anatomy-map-wrap{max-width:337px}.abdomen-map-wrap{max-width:330px}}
+</style>

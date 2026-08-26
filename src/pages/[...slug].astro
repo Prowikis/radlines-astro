@@ -1,0 +1,12 @@
+---
+import RadlinesLayout from '../layouts/RadlinesLayout.astro';
+import MainPage from '../components/MainPage.astro';
+import pages from '../data/pages.json';
+export function getStaticPaths() {
+  return pages.map((page) => ({ params: { slug: page.slug }, props: { page } }));
+}
+const { page } = Astro.props;
+---
+<RadlinesLayout title={page.title}>
+  {page.title === 'Main' ? <MainPage /> : <><h1>{page.title}</h1><div class="mw-parser-output" set:html={page.html} /></>}
+</RadlinesLayout>
